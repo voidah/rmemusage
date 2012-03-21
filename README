@@ -1,7 +1,7 @@
 rmemusage tries to show the real memory usage used by processes/users on linux. It uses libproc to query process information and estimate _real_ per-process memory usage.
 
 To build:
-g++ main.cc -g -l proc-3.2.8 -o rmemusage
+g++ main.cc -l proc-3.2.8 -o rmemusage
 
 To run (as root to have information about all processes):
 # ./rmemusage [-u]
