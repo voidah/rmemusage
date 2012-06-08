@@ -7,3 +7,15 @@ To run (as root to have information about all processes):
 # ./rmemusage [-u]
 
 When ran without options, it simply output all processes currently running and their memory usage. When ran with the -u option, it calculate memory usage per-user.
+
+Columns description:
+
+PID:  Process id (posix thread id)
+PPID: Parent process
+NAME: Process name
+USER: User running that process
+RSS:  Resident Set Size, it's the process memory usage + memory used by all shared libs it uses
+PSS:  Proportional Set Size (process memory + fraction of shared memory with other processes)
+SWAP: Part of the process memory that is swapped
+REAL: PSS + SWAP
+
