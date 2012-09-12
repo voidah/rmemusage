@@ -3,6 +3,8 @@ rmemusage tries to show the real memory usage used by processes/users on linux. 
 To build:
 g++ main.cc -l procps -o rmemusage
 
+Note: It appears that on some system you need to replace procps by proc in the previous command
+
 To run (as root to have information about all processes):
 # ./rmemusage [-u]
 
